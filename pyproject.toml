@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "touyan2"
+version = "1.1.0"
+description = "产线落地投研分析引擎 — 面向地方政府/国资平台的招商项目投研分析报告生成框架"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [
+    { name = "zhangpeifu", email = "1724513249@qq.com" }
+]
+keywords = ["investment-research", "government-recruitment", "due-diligence", "docx-generator", "report-generator"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Office/Business :: Financial :: Investment",
+]
+dependencies = [
+    "python-docx>=0.8.11",
+]
+
+[project.scripts]
+touyan2 = "touyan2.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["touyan2*"]

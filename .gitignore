@@ -6,3 +6,7 @@ dist/
 build/
 output/
 *.docx
+.pytest_cache/
+.DS_Store
+*.swp
+*.bak
